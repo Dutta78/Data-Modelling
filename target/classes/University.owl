@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#"
+     xml:base="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:school="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school">
+        <rdfs:comment xml:lang="en">This is an ontology about school.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Learn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Learn">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Subject"/>
+        <rdfs:comment xml:lang="en">Student learns subject.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#admits -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#admits">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#School"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Student"/>
+        <rdfs:comment xml:lang="en">School admits Students.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#employees -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#employees">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#School"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Staff"/>
+        <rdfs:comment xml:lang="en">School employees staff.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#teaches -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#teaches">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Teacher"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Subject"/>
+        <rdfs:comment xml:lang="en">Teacher teaches a subject.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#JoinedON -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#JoinedON">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:comment xml:lang="en">Indicates the joining date of student.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#staffID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#staffID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Staff"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment xml:lang="en">Indicates the staff ID.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#studentID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#studentID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Student"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#teach -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#teach">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Teacher"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Admin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Admin">
+        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Maintenance"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Non-Teaching"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Govt. -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Govt.">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#School"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#House_keeping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#House_keeping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Non-Teaching"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Junior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Junior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Maintenance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Maintenance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Non-Teaching"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Non-Teaching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Non-Teaching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Private -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Private">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#School"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#School -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#School">
+        <rdfs:comment xml:lang="en">This class denotes the school.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Senior -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Senior">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Staff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Staff"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Student"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Subject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Subject"/>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Non-Teaching"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Teacher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Teacher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Staff"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Arjun_Dutta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Arjun_Dutta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Student"/>
+        <JoinedON rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2021-09-12</JoinedON>
+        <studentID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Number1</studentID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#International_School -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#International_School">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#School"/>
+        <admits rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Arjun_Dutta"/>
+        <employees rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Tony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Nat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Nat">
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Tony"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Tony -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Tony">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Teacher"/>
+        <teaches rdf:resource="http://www.semanticweb.org/sanandansharma/ontologies/2022/2/school#Arjun_Dutta"/>
+        <teach rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Computer Science</teach>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
